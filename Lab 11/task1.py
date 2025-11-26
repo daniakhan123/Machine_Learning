@@ -33,3 +33,16 @@ pred = model.predict(X_test)
 print(accuracy_score(y_test, pred))
 print(classification_report(y_test, pred))
 print(confusion_matrix(y_test, pred))
+
+'key challenges'
+'''1 Evolving Nature of Spam
+
+Spammers continuously change writing style 
+Requires regular model retraining.
+2 Class Imbalance
+Usually ham > spam
+Use oversampling or class weight adjustments.
+3 Keyword Overlap
+Legitimate emails sometimes contain spam-like words.
+Need contextual understanding (TF-IDF helps).
+'''
